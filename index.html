@@ -5,7 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ranga Store</title>
+  <title>Spotlight on style</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
   <!---Font awesome-->
   <script src="https://kit.fontawesome.com/7043d83c93.js" crossorigin="anonymous"></script>
 
@@ -26,7 +30,7 @@
 
   <!-- header section -->
   <header>
-    <h1 class="text-center text-primary fw-bolder m-3">Spotlight on STYLE!</h1>
+    <h1 class="text-center text-primary fw-bolder m-2">Spotlight on STYLE!</h1>
     <hr class="w-25 mx-auto">
   </header>
 
@@ -38,13 +42,12 @@
       <div class="search-box input-group mb-3">
         <input type="text" class="form-control" placeholder="Search Product" aria-label="Search Product"
           aria-describedby="basic-addon2">
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+          id="search-btn" onclick="loadProducts()">Search </button>
       </div>
     </div>
 
+    <!-- display products + cart section start -->
     <div class="row">
 
       <!-- display products card -->
@@ -58,7 +61,7 @@
         <div class="cart" id="my-cart">
           <table class="table">
             <thead>
-              <h1>My-Cart</h1>
+              <h1 class="fs-3">My-Cart</h1>
               <tr>
                 <th scope="col"></th>
                 <th scope="col"></th>
@@ -98,6 +101,8 @@
               </tr>
             </tbody>
           </table>
+
+          <!-- Buy now button -->
           <div class="parces text-center">
             <button class="btn btn-primary text-center">Buy Now</button>
           </div>
@@ -105,7 +110,11 @@
       </div>
     </div>
   </main>
+  <!-- main section end -->
+
+  <!-- footer -->
   <footer></footer>
+
 
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>
